@@ -2,28 +2,29 @@ import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { images } from "../../config/ImagesConfig";
 
 const projects = [
   {
     name: "Global Tuition",
     year: "Jan 2025",
     align: "right",
-    image: "../../public/images/Globaltuition.JPG",
+    image: images.GlobalTuitionimg,
     link: "https://globaltuitions.co.uk/",
   },
   {
     name: "igniUp IDE's",
     year: "April 2025",
     align: "left",
-    image: "../../public/images/IDEimg.JPG",
+    image: images.igniUpimg,
     link: "https://igniup.com/",
   },
   {
     name: "Track Master",
     year: "December 2024",
     align: "right",
-    image: "../../public/images/trackmaster.JPG",
-    link: "#",
+    image: images.Trackmasterimg,
+    link: "https://trackmaster.ignipulse.com/",
   },
   // {
   //   name: "Bank of Luck",
@@ -54,6 +55,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link}
             />
           );
         })}

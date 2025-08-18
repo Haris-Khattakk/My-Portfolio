@@ -1,11 +1,12 @@
 import { PiHexagonThin } from "react-icons/pi";
+import Myimg from "../../public/images/me.png";
 
 const HeroImage = () => {
   return (
     <div className="relative items-center self-end justify-center w-full h-full">
       <div className="w-full h-full ">
         <img
-          src="../../public/images/me.png"
+          src={Myimg}
           alt="Haris Khattak"
           className="w-auto h-auto md:max-w-[570px] sm:max-w-[380px] absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
         />

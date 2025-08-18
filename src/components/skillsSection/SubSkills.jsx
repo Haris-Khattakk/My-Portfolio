@@ -1,12 +1,10 @@
+import { images } from "../../config/ImagesConfig";
+
 const SubSkills = () => {
   return (
-    <div className="border-y-2 border-lightGrey relative ">
-      <div className="absolute bg-gradient-to-r from-orange to-cyan opacity-50 w-full h-full"></div>
-      <img
-        src="../../public/images/subSkills.jpg"
-        alt="subSkills image"
-        className=""
-      />
+    <div className="relative border-y-2 border-lightGrey ">
+      <div className="absolute w-full h-full opacity-50 bg-gradient-to-r from-orange to-cyan"></div>
+      <img src={images.SubSkillsimg} alt="subSkills image" className="" />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { PiHexagonThin } from "react-icons/pi";
+import { images } from "../../config/ImagesConfig";
 
 const HeroPic = () => {
   return (
@@ -12,7 +13,7 @@ const HeroPic = () => {
       className="flex items-center justify-center h-full "
     >
       <img
-        src="../../public/images/HexaPic (2).png"
+        src={images.Myimg}
         alt="Abdelrahman Qassem"
         className="max-h-[450px] w-auto"
       />
